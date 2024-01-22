@@ -1,4 +1,4 @@
-str = (
+print(
 'The Zen of Python, by Tim Peters\n'
 'Beautiful is better than ugly.\n'
 'Explicit is better than implicit.\n'
@@ -20,4 +20,3 @@ str = (
 'If the implementation is easy to explain, it may be a good idea.\n'
 'Namespaces are one honking great idea -- let\'s do more of those!'
 )
-print(str)
