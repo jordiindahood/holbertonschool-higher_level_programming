@@ -5,6 +5,6 @@ def print_matrix_integer(matrix=[[]]):
     for vec in range(len(matrix)):
         for idx in range(len(matrix[vec])):
             print("{:d}".format(matrix[vec][idx]), end="")
-            if idx < 2:
+            if idx < len(matrix[vec]) - 1:
                 print(end=" ")
         print()
