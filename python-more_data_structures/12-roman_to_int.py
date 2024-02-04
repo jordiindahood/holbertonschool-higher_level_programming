@@ -4,7 +4,7 @@ def roman_to_int(roman_string):
     num = 0
     prev = 0
 
-    if roman_string is None:
+    if isinstance(roman_string, str) or roman_string is None:
         return 0
     for ky in roman_string[::-1]:
         val = _ro[ky]
