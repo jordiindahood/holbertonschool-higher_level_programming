@@ -4,7 +4,7 @@
 
 
 class Square:
-    """a class that creates an empty square
+    """a class that creates a square
 
     Keyword arguments:
     argument -- none
@@ -12,5 +12,5 @@ class Square:
     """
 
     def __init__(self, size):
-        self._size = size
+        self._Square__size = size
         pass
