@@ -18,5 +18,6 @@ class Square:
             raise Exception("size must be >= 0")
         self._Square__size = size
         pass
+
     def area(self):
-        return self._Square__size ** 2
+        return self._Square__size**2
