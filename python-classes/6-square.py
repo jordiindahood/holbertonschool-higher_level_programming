@@ -45,12 +45,8 @@ class Square:
     def my_print(self):
         if self._Square__size == 0:
             print()
-            return
+            pass
         for i in range(self._Square__pos[1]):
             print()
-        for line in range(self._Square__size):
-            if not self._Square__pos[1] > 1:
-                print(" " * self._Square__pos[0], end="")
-            for col in range(self._Square__size):
-                print("#", end="")
-            print()
+        for j in range(self._Square__size):
+            print(" " * self._Square__pos[0] + "#" * self._Square__size)
