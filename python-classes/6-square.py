@@ -37,7 +37,8 @@ class Square:
         if self._Square__size == 0:
             print()
         for line in range(self._Square__size):
-            print(" " * self._Square__pos[0], end="")
+            if sig ==0:
+                print(" " * self._Square__pos[0], end="")
             for col in range(self._Square__size):
                 print("#", end="")
             print()
