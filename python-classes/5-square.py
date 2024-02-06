@@ -34,5 +34,5 @@ class Square:
             print()
         for line in range(self._Square__size):
             for col in range(self._Square__size):
-                print('#',end='')
+                print("#", end="")
             print()
