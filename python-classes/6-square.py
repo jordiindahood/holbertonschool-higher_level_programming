@@ -29,6 +29,7 @@ class Square:
         if value < 0:
             raise Exception("size must be >= 0")
         self._Square__size = value
+
     @property
     def position(self):
         return self._Square__pos
@@ -52,4 +53,3 @@ class Square:
             for col in range(self._Square__size):
                 print("#", end="")
             print()
-
