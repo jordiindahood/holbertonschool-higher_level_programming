@@ -62,9 +62,19 @@ Traceback (most recent call last):
     ...
 TypeError: a must be an integer
 
->>> add_integer(max(int), 4477878778)
+>>> add_integer(max(int), 9563878913)
 Traceback (most recent call last):
     ....
 TypeError: 'type' object is not iterable
+
+>>> add_integer(False, -2)
+Traceback (most recent call last):
+    ....
+TypeError: a must be an integer
+
+>>> add_integer(69, True)
+Traceback (most recent call last):
+    ....
+TypeError: b must be an integer
 
 """
