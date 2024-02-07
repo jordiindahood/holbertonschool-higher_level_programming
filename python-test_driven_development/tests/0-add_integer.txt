@@ -77,4 +77,9 @@ Traceback (most recent call last):
     ....
 TypeError: b must be an integer
 
+>>> a = 3
+>>> b = -5
+>>> add_integer(a, b)
+-2
+
 """
