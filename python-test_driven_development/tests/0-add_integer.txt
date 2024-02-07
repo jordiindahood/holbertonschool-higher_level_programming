@@ -1,58 +1,70 @@
 """
 Description: Test add_integer function
 >>> add_integer = __import__('0-add_integer').add_integer
->>> add_integer(5, 3)
+>>> add_integer(6, 3)
+9
+
+>>> add_integer(-2, 2)
+0
+
+>>> add_integer(7.5, 3)
+10
+
+>>> add_integer(3, 5.5)
 8
 
->>> add_integer(0 , -1)
--1
-
->>> add_integer(5.3 , 3.5)
+>>> add_integer(3.5, 5.5)
 8
 
->>> add_integer('5' , 3)
+>>> add_integer("2", 3)
 Traceback (most recent call last):
     ...
 TypeError: a must be an integer
 
->>> add_integer(1,'a')
+>>> add_integer(2, "3")
 Traceback (most recent call last):
     ...
 TypeError: b must be an integer
 
->>> add_integer("a", "f")
-Traceback (most recent call last):
-    ...
-TypeError: a must be an integer
-
->>> add_integer(100.3, -2, 10)
+>>> add_integer(1, 2, 3)
 Traceback (most recent call last):
     ...
 TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
 
+>>> add_integer("-2","3")
+Traceback (most recent call last):
+    ...
+TypeError: a must be an integer
+
+>>> add_integer()
+Traceback (most recent call last):
+    ....
+TypeError: add_integer() missing 1 required positional argument: 'a'
+
+>>> add_integer(-2, -2)
+-4
+
+>>> add_integer(-2, 4.545)
+2
+
+>>> add_integer(2)
+100
+
+>>> add_integer(-98)
+0
+
+>>> add_integer(float('inf'))
+Traceback (most recent call last):
+OverflowError: cannot convert float infinity to integer
+
 >>> add_integer(None)
 Traceback (most recent call last):
     ...
 TypeError: a must be an integer
 
->>> add_integer(7,None)
+>>> add_integer(max(int), 4477878778)
 Traceback (most recent call last):
-    ...
-TypeError: b must be an integer
-
->>> add_integer(None,5)
-Traceback (most recent call last):
-    ...
-TypeError: a must be an integer
-
->>> add_integer(None)
-Traceback (most recent call last):
-    ...
-TypeError: a must be an integer
-
->>> add_integer(max(int),8)
-Traceback (most recent call last):
-    ...
+    ....
 TypeError: 'type' object is not iterable
 
 """
