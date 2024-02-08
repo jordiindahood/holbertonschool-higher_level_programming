@@ -5,14 +5,14 @@
 
 def say_my_name(first_name, last_name=""):
     """
-    Divides all elements of a matrix by the specified divisor.
+    print a sentence that contains {first name} + {last name}
 
     Parameters:
-    - matrix (list of lists): The matrix to be divided.
-    - div (int or float): The divisor.
+    - first_name: str
+    - last_name: str
 
     Returns:
-    - new_matrix (list of lists): The resulting matrix after division.
+    none
     """
 
     if not type(first_name) is str:
