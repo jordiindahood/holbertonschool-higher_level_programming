@@ -8,8 +8,8 @@ Return: return_description
 
 def matrix_divided(matrix, div):
     """Keyword arguments:
-    argument -- a, b
-    Return: int"""
+    argument -- [[]] , int
+    Return: lis [[]]"""
     for lis in matrix:
         if len(matrix[0]) != len(lis):
             raise TypeError("Each row of the matrix must have the same size")
