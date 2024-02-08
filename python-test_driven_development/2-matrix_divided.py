@@ -16,16 +16,18 @@ def matrix_divided(matrix, div):
         for elem in lis:
             if not type(elem) in [int, float]:
                 raise TypeError(
-                    "matrix must be a matrix (list of lists) of integers/floats"
+                    "matrix must be a matrix " +
+                    "(list of lists) of integers/floats"
                 )
     if not type(div) in [int, float]:
         raise TypeError(
-            "matrix must be a matrix (list of lists) of integers/floats"
+            "matrix must be a matrix " +
+            "(list of lists) of integers/floats"
         )
     if div == 0:
         raise ZeroDivisionError("division by zero")
 
     new_matrix = []
     for i in matrix:
-        new_matrix.append(list(map(lambda x: round(x/div,2), i)))
+        new_matrix.append(list(map(lambda x: round(x / div, 2), i)))
     return new_matrix
