@@ -17,4 +17,4 @@ def print_square(size):
         raise TypeError("size must be >= 0")
 
     line = str("#" * size) + "\n"
-    print(line * size)
+    print(line * size,end="")
