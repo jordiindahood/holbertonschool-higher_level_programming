@@ -16,19 +16,19 @@ Traceback (most recent call last):
 TypeError: first_name must be a string
 
 >>> say_my_name("HEISENBERG")
-My name is"HEISENBERG 
+My name is HEISENBERG 
 
 >>> say_my_name("HEISENBERG", "HMED")
-My name is"HEISENBERG HMED
+My name is HEISENBERG HMED
 
 >>> say_my_name("HEISENBERG", "HMED", "JORDYYY	")
 Traceback (most recent call last):
 TypeError: say_my_name() takes from 1 to 2 positional arguments but 3 were given
 
->>> a = "tes tes tes tes tes tes tes"
+>>> a = "tes tes tes tes tes tes tes,"
 >>> b = "nbi3 eddar w nechry fless"
 >>> say_my_name(a, b)
-My name is hi test
+My name is tes tes tes tes tes tes tes, nbi3 eddar w nechry fless
 
 >>> say_my_name(5, "HEISENBERG")
 Traceback (most recent call last):
