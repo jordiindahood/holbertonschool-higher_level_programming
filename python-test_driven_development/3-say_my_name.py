@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" holberton-school task 1 module file
+""" holberton-school task 2 module file
 """
 
 
