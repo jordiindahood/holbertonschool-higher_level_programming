@@ -1,0 +1,22 @@
+"""
+>>> MyList = __import__('1-my_list').MyList
+
+>>> list = MyList()
+>>> list.append(-1)
+>>> list.print_sorted()
+[-1]
+
+>>> list = Mylist()
+>>> list.append(1,2)
+Traceback (most recent call last):
+TypeError: list.append() takes exactly one argument (2 given)
+
+>>> list = MyList()
+>>> list.append()
+Traceback (most recent call last):
+TypeError: list.append() takes exactly one argument (0 given)
+
+>>> list = MyList()
+>>> list.append(None)
+
+"""
