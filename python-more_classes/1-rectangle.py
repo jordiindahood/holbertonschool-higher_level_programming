@@ -46,7 +46,9 @@ class Rectangle:
 
         self.__rectangle__height = value
 
-    """Proprety: getter to the width attribute"""
+    """
+    Proprety: getter to the width attribute
+    """
 
     @property
     def width(self):
