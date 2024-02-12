@@ -27,7 +27,7 @@ class Rectangle:
 
     @property
     def height(self):
-        return self.__height__
+        return self.rec_height
 
     """
     Property setter for the height attribute,
@@ -41,7 +41,7 @@ class Rectangle:
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
-        self.__height__ = value
+        self.rec_height = value
 
     """
     Property getter for the width attribute,
@@ -50,7 +50,7 @@ class Rectangle:
 
     @property
     def width(self):
-        return self.__width__
+        return self.rec_width
 
     """
     Property setter for the width attribute,
@@ -64,10 +64,10 @@ class Rectangle:
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
-        self.__width__ = value
+        self.rec_width = value
 
     def area(self):
-        return self.__height__ * self.__width__
+        return self.rec_height * self.rec_width
 
     def perimeter(self):
-        return self.__height__ * 2 + self.__width__ * 2
+        return (self.rec_height + self.rec_width) * 2
