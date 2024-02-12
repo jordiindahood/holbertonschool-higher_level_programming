@@ -13,16 +13,16 @@ class Rectangle:
     """
 
     def __init__(self, width=0, height=0):
-        if type(height) is not int:
+        if type(height) is not (int or bool):
             raise TypeError("height must be an integer")
         if height < 0:
             raise ValueError("height must be >= 0")
-        self.__rectangle__height = height
-        if type(width) is not int:
+        self.__rectangle__height = int(height)
+        if type(width) is not (int or bool):
             raise TypeError("width must be an integer")
         if width < 0:
             raise ValueError("width must be >= 0")
-        self.__rectangle__width = width
+        self.__rectangle__width = int(width)
 
     """
     Proprety: getter to the height attribute
@@ -39,12 +39,12 @@ class Rectangle:
 
     @height.setter
     def height(self, value):
-        if type(value) is not int:
+        if type(value) is not (int or bool):
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
 
-        self.__rectangle__height = value
+        self.__rectangle__height = int(value)
 
     """
     Proprety: getter to the width attribute
@@ -61,9 +61,9 @@ class Rectangle:
 
     @width.setter
     def width(self, value):
-        if type(value) is not int:
+        if type(value) is not (int or bool):
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
 
-        self.__rectangle__width = value
+        self.__rectangle__width = int(value)
