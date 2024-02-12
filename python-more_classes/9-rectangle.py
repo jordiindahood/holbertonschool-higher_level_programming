@@ -81,8 +81,8 @@ class Rectangle:
 
     def __str__(self):
         if self.rec_height != 0 and self.rec_width != 0:
-            strr = (str(self.print_symbol) * self.rec_width
-                    + "\n") * self.rec_height
+            sy = self.print_symbol
+            strr = (str(sy) * self.rec_width + "\n") * self.rec_height
         else:
             return ""
         return strr[:-1]
