@@ -1,62 +1,62 @@
 #!/usr/bin/python3
 
 """
-    This class creates a rectangle
-    width: int
-    height: int
+This script defines a Rectangle class with properties for width and height,
+which are enforced to be positive integers.
 """
 
 
 class Rectangle:
+
     """
-    Rectangle: a class that creates a rectangle
-    Default: zero if width or height not assigned
+    Constructor for the Rectangle class, initializing a rectangle with the
+    given width and height values. Defaults to zero if no values are provided.
     """
 
     def __init__(self, width=0, height=0):
-        self.__rectangle__height = int(height)
-        self.__rectangle__width = int(width)
+        self.height = height
+        self.width = width
 
     """
-    Proprety: getter to the height attribute
+    Property getter for the height attribute,
+    returns the private variable __height.
     """
 
     @property
     def height(self):
-        return self.__rectangle__height
+        return self.__height
 
     """
-    Proprety: setter for the height attribute
-    height should be an integer and >= than zero
+    Property setter for the height attribute, validating that the input is an
+    integer and greater than or equal to 0. Raises a TypeError otherwise.
     """
 
     @height.setter
     def height(self, value):
-        if type(value) is not (int or bool):
+        if not isinstance(value, int):
             raise TypeError("height must be an integer")
         if value < 0:
             raise ValueError("height must be >= 0")
-
-        self.__rectangle__height = int(value)
+        self.__height = value
 
     """
-    Proprety: getter to the width attribute
+    Property getter for the width attribute,
+    returns the private variable __width.
     """
 
     @property
     def width(self):
-        return self.__rectangle__width
+        return self.__width
 
     """
-    Proprety: getter to the width attribute
-    width should be an integer and >= than zero
+    Property setter for the width attribute, validating that the input is an
+    integer and greater than or equal to 0. Raises a TypeError otherwise.
     """
 
     @width.setter
     def width(self, value):
-        if type(value) is not (int or bool):
+        if not isinstance(value, int):
             raise TypeError("width must be an integer")
         if value < 0:
             raise ValueError("width must be >= 0")
-
-        self.__rectangle__width = int(value)
+        self.__width = value
