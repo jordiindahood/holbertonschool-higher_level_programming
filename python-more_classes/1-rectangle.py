@@ -6,17 +6,21 @@
 
 class Rectangle:
     """
-    rectangle
+    Rectangle: a class that creates a rectangle
     """
 
     def __init__(self, width=0, height=0):
+        """INITIALIZE the rectangle with a height and width"""
         self.__rectangle__height = height
         self.__rectangle__width = width
 
+    """Proprety: getter to the height attribute"""
 
     @property
     def height(self):
         return self.__rectangle__height
+
+    """Proprety: setter for the height attribute"""
 
     @height.setter
     def height(self, value):
@@ -24,12 +28,16 @@ class Rectangle:
             raise TypeError("height must be an integer")
         elif value < 0:
             raise ValueError("height must be >= 0")
-        else :
+        else:
             self.__rectangle__height = value
+
+    """Proprety: getter to the width attribute"""
 
     @property
     def width(self):
         return self.__rectangle__width
+
+    """Proprety: getter to the width attribute"""
 
     @width.setter
     def width(self, value):
@@ -37,5 +45,5 @@ class Rectangle:
             raise TypeError("width must be an integer")
         elif value < 0:
             raise ValueError("width must be >= 0")
-        else :
+        else:
             self.__rectangle__width = value
