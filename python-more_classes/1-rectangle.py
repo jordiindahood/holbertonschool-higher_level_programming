@@ -1,20 +1,18 @@
 #!/usr/bin/python3
 """
     This class creates a rectangle
+    width: int
+    height: int
 """
 
 
 class Rectangle:
     """
     Rectangle: a class that creates a rectangle
+    Default: zero if width or height not assigned
     """
 
     def __init__(self, width=0, height=0):
-        """
-        INITIALIZE the rectangle with a height and width
-        width and height should be an integer and >= than zero
-        """
-
         if type(height) is not int:
             raise TypeError("height must be an integer")
         if height < 0:
