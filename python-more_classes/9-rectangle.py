@@ -81,8 +81,8 @@ class Rectangle:
 
     def __str__(self):
         if self.rec_height != 0 and self.rec_width != 0:
-            strr = (str(self.print_symbol) * self.rec_width + "\n") *
-            self.rec_height
+            strr = (str(self.print_symbol) * self.rec_width
+                    + "\n") * self.rec_height
         else:
             return ""
         return strr[:-1]
@@ -94,6 +94,7 @@ class Rectangle:
         print("Bye rectangle...")
         Rectangle.number_of_instances -= 1
 
+    @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         if type(rect_1) is not Rectangle:
             raise TypeError("rect_1 must be an instance of Rectangle")
