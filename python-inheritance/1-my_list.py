@@ -6,8 +6,11 @@
 
 class MyList(list):
     """
-    inherit the list Class to MyList class
+    a subclass of List
     """
 
     def print_sorted(self):
+        """
+        print a sorted version
+        """
         print(sorted(self))
