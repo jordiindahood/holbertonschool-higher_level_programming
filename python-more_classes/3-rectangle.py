@@ -8,7 +8,6 @@ which are enforced to be positive integers.
 
 
 class Rectangle:
-
     """
     Constructor for the Rectangle class,
     initializing a rectangle with the
@@ -75,6 +74,8 @@ class Rectangle:
         return (self.rec_height + self.rec_width) * 2
 
     def __str__(self):
-        if self.rec_height == 0 or self.rec_width == 0:
-            return ""
-        return ("#" * self.rec_width + "\n") * self.rec_height
+        strr = "" 
+        if self.rec_height != 0 and self.rec_width != 0:
+            strr = ("#" * self.rec_width + "\n") * self.rec_height
+        return strr[:-1]
+    
