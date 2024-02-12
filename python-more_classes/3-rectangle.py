@@ -74,8 +74,8 @@ class Rectangle:
         return (self.rec_height + self.rec_width) * 2
 
     def __str__(self):
-        strr = "" 
         if self.rec_height != 0 and self.rec_width != 0:
             strr = ("#" * self.rec_width + "\n") * self.rec_height
+        else:
+            return ""
         return strr[:-1]
-    
