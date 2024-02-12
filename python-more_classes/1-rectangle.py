@@ -10,7 +10,10 @@ class Rectangle:
     """
 
     def __init__(self, width=0, height=0):
-        """INITIALIZE the rectangle with a height and width"""
+        """
+        INITIALIZE the rectangle with a height and width
+        width and height should be an integer and >= than zero
+        """
 
         if type(height) is not int:
             raise TypeError("height must be an integer")
@@ -23,13 +26,18 @@ class Rectangle:
             raise ValueError("width must be >= 0")
         self.__rectangle__width = width
 
-    """Proprety: getter to the height attribute"""
+    """
+    Proprety: getter to the height attribute
+    """
 
     @property
     def height(self):
         return self.__rectangle__height
 
-    """Proprety: setter for the height attribute"""
+    """
+    Proprety: setter for the height attribute
+    height should be an integer and >= than zero
+    """
 
     @height.setter
     def height(self, value):
@@ -46,7 +54,10 @@ class Rectangle:
     def width(self):
         return self.__rectangle__width
 
-    """Proprety: getter to the width attribute"""
+    """
+    Proprety: getter to the width attribute
+    width should be an integer and >= than zero
+    """
 
     @width.setter
     def width(self, value):
