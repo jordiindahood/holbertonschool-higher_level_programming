@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """
-    file input-output: task 0 
+    file input-output:
+    task 0 
 """
 
 
 def read_file(filename=""):
     """a function that reads a file
-
     Keyword arguments:
     file_name -- name of file (str), "" if nothing
     Return: none
