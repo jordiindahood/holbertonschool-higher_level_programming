@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 """
     file input-output:
-    task 0 
+    task 0
 """
 
 
