@@ -27,5 +27,5 @@ class Student:
             dikt = dict()
             for idx in attrs:
                 if idx in self.__dict__.keys():
-                    dikt.update(dict(idx=self.__dict__[idx]))
+                    dikt.update({idx: self.__dict__[idx]})
             return dikt
