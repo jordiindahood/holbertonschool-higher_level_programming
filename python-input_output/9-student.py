@@ -3,7 +3,6 @@
     file input-output:
     task 9
 """
-class_to_json = __import__("8-class_to_json").class_to_json
 
 
 class Student:
@@ -22,4 +21,4 @@ class Student:
 
     def to_json(self):
         """retrieve a dictionary representation of student"""
-        return class_to_json(self)
+        return self.__dict__
