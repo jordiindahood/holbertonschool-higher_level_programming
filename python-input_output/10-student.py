@@ -21,10 +21,10 @@ class Student:
 
     def to_json(self, attrs=None):
         """retrieve a dictionary representation of student"""
-        dikt = dict()
         if attrs is None:
             return self.__dict__
         else:
+            dikt = dict()
             for idx in attrs:
                 if idx in self.__dict__.keys():
                     dikt.update(dict(idx=self.__dict__[idx]))
