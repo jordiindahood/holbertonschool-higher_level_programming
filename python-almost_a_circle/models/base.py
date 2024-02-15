@@ -14,4 +14,6 @@ class Base:
     def __init__(self, id=None):
         if id is not None:
             self.id = id  # just assume that id is an integer in testing
-        self.__nb_objects += 1
+        else:
+            Base.__nb_objects += 1
+            self.id = self.__nb_objects
