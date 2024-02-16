@@ -8,11 +8,11 @@ if __name__ != "__main__":
 
     class Rectangle(Base):
         """
-        Rectangle: a class that inherited from Base class
-        width: int
-        height: int
-        x,y: int
-        id: int , None if not assigned
+            Rectangle: a class that inherited from Base class
+            width: int
+            height: int
+            x,y: int
+            id: int , None if not assigned
         """
 
         def __init__(self, width, height, x=0, y=0, id=None):
@@ -27,7 +27,7 @@ if __name__ != "__main__":
         @property
         def width(self):
             return self.__width
-        
+
         # getter/setter : height
         @property
         def height(self):
