@@ -141,6 +141,10 @@ if __name__ != "__main__":
                 setattr(self, ky, vl)
 
         def to_dictionary(self):
+            """to_dictionary():
+            this function printsthe dictionary representation
+            of Rectangle class
+            """
             new_dict = dict()
             new_dict.update({"x": self.__x})
             new_dict.update({"y": self.__y})
