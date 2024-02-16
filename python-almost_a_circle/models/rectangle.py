@@ -104,4 +104,8 @@ if __name__ != "__main__":
             return self.__height * self.__width
 
         def display(self):
+            """
+            display():
+            this function prints the rectangle with # character
+            """
             print(("#" * self.__width + "\n") * self.__height)
