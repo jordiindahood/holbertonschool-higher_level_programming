@@ -125,7 +125,7 @@ if __name__ != "__main__":
             update():
             update the class Rectangle
             """
-            
+
             if len(args) > 0:
                 self.id = args[0]
             if len(args) > 1:
@@ -136,6 +136,6 @@ if __name__ != "__main__":
                 self.__x = args[3]
             if len(args) > 4:
                 self.__y = args[4]
-                    
+
             for ky, vl in kwargs.items():
                 setattr(self, ky, vl)
