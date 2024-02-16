@@ -21,7 +21,7 @@ if __name__ != "__main__":
 
         def __str__(self):
             S_str = str(
-                f"[Square] ({self.id}) {self.x}/{self.y}" + 
+                f"[Square] ({self.id}) {self.x}/{self.y}" +
                 f" - {self.width}"
             )
             return S_str
