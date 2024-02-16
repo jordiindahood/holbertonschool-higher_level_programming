@@ -16,44 +16,45 @@ if __name__ != "__main__":
         """
 
         def __init__(self, width, height, x=0, y=0, id=None):
+            """Class init"""
             super().__init__(id)
-            self.width = width
-            self.height = height
-            self.x = x
-            self.y = y
+            self.__width = width
+            self.__height = height
+            self.__x = x
+            self.__y = y
 
         # getter/setter : width
         @property
-        def fwidth(self):
+        def width(self):
             return self.__width
-
-        @fwidth.setter
-        def fwidth(self, value):
-            self.__width = value
-
+        
         # getter/setter : height
         @property
-        def fheight(self):
+        def height(self):
             return self.__height
-
-        @fheight.setter
-        def fheight(self, value):
-            self.__height = value
 
         # getter/setter : x
         @property
-        def x_axis(self):
+        def x(self):
             return self.__x
-
-        @x_axis.setter
-        def x_axis(self, value):
-            self.__x = value
 
         # getter/setter : y
         @property
-        def y_axis(self):
+        def y(self):
             return self.__y
 
-        @y_axis.setter
+        @width.setter
+        def width(self, value):
+            self.__width = value
+
+        @height.setter
+        def height(self, value):
+            self.__height = value
+
+        @x.setter
+        def x(self, value):
+            self.__x = value
+
+        @y.setter
         def y_axis(self, value):
             self.__y = value
