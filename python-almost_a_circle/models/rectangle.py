@@ -121,6 +121,10 @@ if __name__ != "__main__":
             print(the_form[:-1])
 
         def update(self, *args):
+            """
+            update():
+            update the class Rectangle
+            """
             if len(args) > 0:
                 self.id = args[0]
             if len(args) > 1:
