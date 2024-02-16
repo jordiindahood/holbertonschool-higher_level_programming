@@ -20,8 +20,7 @@ if __name__ != "__main__":
 
         def __str__(self):
             """string representation of Square class"""
-            S_str = str(f"[Square] ({self.id}) {self.x}/{self.y}" +
-                        f" - {self.width}")
+            S_str = str(f"[Square] ({self.id}) {self.x}/{self.y}" + f" - {self.width}")
             return S_str
 
         @property
@@ -35,3 +34,6 @@ if __name__ != "__main__":
             if value <= 0:
                 raise ValueError("width must be > 0")
             self.width = value
+
+        def update(self, *args, **kwargs):
+            return super().update(*args, **kwargs)
