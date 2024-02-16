@@ -2,10 +2,11 @@
 """
     Rectangle class file
 """
-from . import base
+from .base import Base
 
 
-class Rectangle(base.Base):
+
+class Rectangle(Base):
     """
     Rectangle: a class that inherited from Base class
     width: int
