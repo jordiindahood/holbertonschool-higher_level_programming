@@ -56,5 +56,5 @@ if __name__ != "__main__":
             self.__x = value
 
         @y.setter
-        def y_axis(self, value):
+        def y(self, value):
             self.__y = value
