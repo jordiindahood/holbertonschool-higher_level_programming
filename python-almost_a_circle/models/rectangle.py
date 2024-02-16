@@ -25,35 +25,35 @@ if __name__ != "__main__":
         # getter/setter : width
         @property
         def fwidth(self):
-            return self.width
+            return self.__width
 
         @fwidth.setter
         def fwidth(self, value):
-            self.width = value
+            self.__width = value
 
         # getter/setter : height
         @property
         def fheight(self):
-            return self.height
+            return self.__height
 
         @fheight.setter
         def fheight(self, value):
-            self.height = value
+            self.__height = value
 
         # getter/setter : x
         @property
         def x_axis(self):
-            return self.x
+            return self.__x
 
         @x_axis.setter
         def x_axis(self, value):
-            self.x = value
+            self.__x = value
 
         # getter/setter : y
         @property
         def y_axis(self):
-            return self.y
+            return self.__y
 
         @y_axis.setter
         def y_axis(self, value):
-            self.y = value
+            self.__y = value
