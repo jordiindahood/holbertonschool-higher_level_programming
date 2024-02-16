@@ -102,3 +102,6 @@ if __name__ != "__main__":
             this function returns the area of a rectangle
             """
             return self.__height * self.__width
+
+        def display(self):
+            print(("#" * self.__width + "\n") * self.__height)
