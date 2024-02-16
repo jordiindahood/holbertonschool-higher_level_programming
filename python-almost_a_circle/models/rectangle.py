@@ -139,3 +139,12 @@ if __name__ != "__main__":
 
             for ky, vl in kwargs.items():
                 setattr(self, ky, vl)
+
+        def to_dictionary(self):
+            new_dict = dict()
+            new_dict.update({"x": self.__x})
+            new_dict.update({"y": self.__y})
+            new_dict.update({"id": self.id})
+            new_dict.update({"height": self.__height})
+            new_dict.update({"width": self.__width})
+            return new_dict
