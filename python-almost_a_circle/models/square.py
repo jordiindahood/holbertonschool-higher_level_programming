@@ -20,8 +20,7 @@ if __name__ != "__main__":
 
         def __str__(self):
             """string representation of Square class"""
-            S_str = str(f"[Square] ({self.id}) {self.x}/{self.y}" +
-                        f" - {self.width}")
+            S_str = str(f"[Square] ({self.id}) {self.x}/{self.y}" + f" - {self.width}")
             return S_str
 
         @property
@@ -53,3 +52,15 @@ if __name__ != "__main__":
 
             for ky, vl in kwargs.items():
                 setattr(self, ky, vl)
+
+        def to_dictionary(self):
+            """to_dictionary():
+            this function prints the dictionary representation
+            of Square class
+            """
+            new_dict = dict()
+            new_dict.update({"id": self.id})
+            new_dict.update({"x": self.x})
+            new_dict.update({"size": self.width})
+            new_dict.update({"y": self.y})
+            return new_dict
