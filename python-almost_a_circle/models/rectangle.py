@@ -103,6 +103,13 @@ if __name__ != "__main__":
             """
             return self.__height * self.__width
 
+        def __str__(self):
+            R_str = str(
+                f"[Rectangle] ({self.id}) {self.__x}/{self.__y}"
+                + f" - {self.__width}/{self.__height}"
+            )
+            return R_str
+
         def display(self):
             """
             display():
