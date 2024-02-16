@@ -9,9 +9,8 @@ if __name__ != "__main__":
     class Square(Rectangle):
         """
         Rectangle: a class that inherited from Base class
-        width: int
-        height: int
-        x,y: int
+        size: int
+        x,y: int , 0 if not assigned
         id: int , None if not assigned
         """
 
@@ -20,8 +19,6 @@ if __name__ != "__main__":
             super().__init__(size, size, x, y, id)
 
         def __str__(self):
-            S_str = str(
-                f"[Square] ({self.id}) {self.x}/{self.y}" +
-                f" - {self.width}"
-            )
+            """string representation of Square class"""
+            S_str = str(f"[Square] ({self.id}) {self.x}/{self.y}" + f" - {self.width}")
             return S_str
