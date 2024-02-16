@@ -108,4 +108,5 @@ if __name__ != "__main__":
             display():
             this function prints the rectangle with # character
             """
-            print(("#" * self.__width + "\n") * self.__height)
+            the_form = ("#" * self.__width + "\n") * self.__height
+            print(the_form[:-1])
