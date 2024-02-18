@@ -33,14 +33,11 @@ if __name__ != "__main__":
         def save_to_file(cls, list_objs):
             """
             that writes the JSON string
-            representation of list_objs to a file
             """
             if list_objs is None:
-                list_objs = []
+                with open(f"{cls.__name__}.json", "w") as file:
+                    json.dump([], file)
             else:
-                filename = cls.__name__ + ".json"
-                with open(filename, "w") as file:
-                    json_string = cls.to_json_string(
-                        [obj.to_dictionary() for obj in list_objs]
-                    )
-                    file.write(json_string)
+                rep = list(idx.to_dictionary() for idx in list_objs)
+                with open(f"{cls.__name__}.json", "w") as file:
+                    file.write(cls.to_json_string(rep))
