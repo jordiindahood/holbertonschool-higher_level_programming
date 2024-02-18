@@ -3,6 +3,7 @@
     Base class file
 """
 import json
+import turtle
 
 if __name__ != "__main__":
 
@@ -46,3 +47,29 @@ if __name__ != "__main__":
         def from_json_string(json_string):
             """that returns the list of the JSON string representation"""
             return json.loads(json_string)
+
+        @classmethod
+        def create(cls, **dictionary):
+            """
+            a function that returns an instance with all attributes already set
+            """
+            cls.update(dictionary)
+            return cls(**dictionary)
+
+        @classmethod
+        def load_from_file(cls):
+            """a function that returns a list of instances"""
+            try:
+                with open(cls.__name__ + ".json", "r") as f:
+                    content = cls.from_json_string(f.read())
+                    my_list = list()
+                    for idx in content:
+                        my_list.append(cls.create(**idx))
+                    return my_list
+            except FileNotFoundError:
+                return []
+
+        @staticmethod
+        def draw(list_rectangles, list_squares):
+            """that opens a window and draws all the Rectangles and Squares"""
+            pass
