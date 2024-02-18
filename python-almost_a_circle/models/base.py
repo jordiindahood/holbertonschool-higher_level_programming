@@ -41,3 +41,8 @@ if __name__ != "__main__":
                 rep = list(idx.to_dictionary() for idx in list_objs)
                 with open(f"{cls.__name__}.json", "w") as file:
                     file.write(cls.to_json_string(rep))
+
+        @staticmethod
+        def from_json_string(json_string):
+            """that returns the list of the JSON string representation"""
+            return json.loads(json_string)
