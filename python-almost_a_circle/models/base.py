@@ -46,6 +46,8 @@ if __name__ != "__main__":
         @staticmethod
         def from_json_string(json_string):
             """that returns the list of the JSON string representation"""
+            if json_string is None
+                return []
             return json.loads(json_string)
 
         @classmethod
