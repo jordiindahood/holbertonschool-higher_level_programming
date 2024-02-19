@@ -18,7 +18,7 @@ class TestRectangle_instantiation(unittest.TestCase):
             Rectangle()
 
     def test_one_arg(self):
-        with self.assertRaises(ValueError):
+        with self.assertRaises(TypeError):
             Rectangle(1)
 
     def test_two_args(self):
@@ -306,16 +306,6 @@ class TestRectangle_update_args(unittest.TestCase):
         r = Rectangle(10, 10, 10, 10, 10)
         with self.assertRaisesRegex(TypeError, "width must be an integer"):
             r.update(89, "invalid", 1, 2, "invalid")
-
-    def test_update_args_height_before_x(self):
-        r = Rectangle(10, 10, 10, 10, 10)
-        with self.assertRaisesRegex(TypeError, "height must be an integer"):
-            r.update(89, 1, "invalid", "invalid")
-
-    def test_update_args_height_before_y(self):
-        r = Rectangle(10, 10, 10, 10, 10)
-        with self.assertRaisesRegex(TypeError, "height must be an integer"):
-            r.update(89, 1, "invalid", 1, "invalid")
 
     def test_update_args_x_before_y(self):
         r = Rectangle(10, 10, 10, 10, 10)

@@ -129,12 +129,28 @@ if __name__ != "__main__":
             if len(args) > 0:
                 self.id = args[0]
             if len(args) > 1:
+                if not isinstance(args[1], int):
+                    raise TypeError("width must be an integer")
+                if args[1] <= 0:
+                    raise ValueError("width must be > 0")
                 self.__width = args[1]
             if len(args) > 2:
+                if not isinstance(args[2], int):
+                    raise TypeError("height must be an integer")
+                if args[2] <= 0:
+                    raise ValueError("height must be > 0")
                 self.__height = args[2]
             if len(args) > 3:
+                if not isinstance(args[3], int):
+                    raise TypeError("x must be an integer")
+                if args[3] < 0:
+                    raise ValueError("x must be >= 0")
                 self.__x = args[3]
             if len(args) > 4:
+                if not isinstance(args[4], int):
+                    raise TypeError("y must be an integer")
+                if args[4] < 0:
+                    raise ValueError("y must be >= 0")
                 self.__y = args[4]
 
             for ky, vl in kwargs.items():
