@@ -35,6 +35,7 @@ if __name__ != "__main__":
             if value <= 0:
                 raise ValueError("width must be > 0")
             self.width = value
+            self.height = self.width
 
         def update(self, *args, **kwargs):
             """
@@ -46,6 +47,7 @@ if __name__ != "__main__":
                 self.id = args[0]
             if len(args) > 1:
                 self.width = args[1]
+                self.height = self.width
             if len(args) > 2:
                 self.x = args[2]
             if len(args) > 3:
