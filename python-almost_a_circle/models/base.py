@@ -74,4 +74,30 @@ if __name__ != "__main__":
         @staticmethod
         def draw(list_rectangles, list_squares):
             """that opens a window and draws all the Rectangles and Squares"""
-            pass
+            screen = turtle.Screen()
+            screen.bgcolor("#6497b1")
+            screen.title("python-almost_circle_draw window")
+            skk = turtle.Turtle()
+            for rec in list_rectangles:
+                skk.goto(rec.x + 10, rec.y)
+                for idx in range(4):
+                    skk.fillcolor("grey")
+                    skk.begin_fill()
+                    skk.forward(rec.width)
+                    skk.left(90)
+                    skk.forward(rec.height)
+                    skk.left(90)
+                    skk.end_fill()
+                    skk.hideturtle()
+            for sqr in list_squares:
+                skk.goto(sqr.x + 10, sqr.y)
+                for idx in range(4):
+                    skk.fillcolor("grey")
+                    skk.begin_fill()
+                    skk.forward(sqr.size)
+                    skk.left(90)
+                    skk.forward(sqr.size)
+                    skk.left(90)
+                    skk.end_fill()
+                    skk.hideturtle()
+            turtle.done()
