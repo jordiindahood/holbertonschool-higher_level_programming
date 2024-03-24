@@ -13,10 +13,11 @@ def main(username, passsword, db_name):
     lists all cities
     """
 
-    d = MySQLdb.connect(
-        host="localhost", user=username, port=3306, passwd=passsword, d=db_name
+    db = MySQLdb.connect(
+        host="localhost", user=username,
+        port=3306, passwd=passsword, db=db_name
     )
-    cur = d.cursor()
+    cur = db.cursor()
 
     cur.execute(
         """
